@@ -24,7 +24,7 @@ app.use(cors());
 app.use(morgan("dev"));
 
 // static folder
-app.use(express.static(path.join(__dirname, "./cleint/build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
 // routes
 app.use("/api/v1/user", userRoutes);
